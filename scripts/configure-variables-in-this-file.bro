@@ -1,7 +1,7 @@
 module Phish; 
 
 	#### send emails to this address
-	redef watcher = "" ; 
+	redef batch_notice_email = "" ; 
 
 
 ##### smtp_sensitive_uri.bro variables 

@@ -7,7 +7,7 @@ export {
 	const emailbatchdelta: interval = 1 mins &redef;
 
 	# Where to send notification
-	const watcher: string = "" &redef;
+	const batch_notice_email: string = "" &redef;
 
 	# Subject line (fmt() called with this and gethostname())
 	const emailsubj: string = "%s bro report" &redef;
@@ -87,8 +87,8 @@ function expire_alerts(t: table[string, addr] of alert_rec, idx: any): interval
 @endif
         close(f);
         local subj = fmt("[Bro] %s ", note);
-        print fmt ("Firing system command with mail -s '%s' %s < %s ; rm %s", subj, watcher, temp, temp);
-        system(fmt("mail -s '%s' %s < %s ; rm %s", subj, watcher, temp, temp));
+        print fmt ("Firing system command with mail -s '%s' %s < %s ; rm %s", subj, batch_notice_email, temp, temp);
+        system(fmt("mail -s '%s' %s < %s ; rm %s", subj, batch_notice_email, temp, temp));
 
 	return 0 secs ; 
 } 
