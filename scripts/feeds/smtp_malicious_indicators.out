@@ -1,12 +1,8 @@
 indicator	description
-server.craterserver.net	bad-server
-german.mendoza@gpm.com.ve	bad-sender
-dfmartin@lbl.gov	recipient
-"Mr. Seigfrid Hernandez" <german.mendoza@gpm.com.ve>	full-bad-sender
-Mr. Seigfrid Hernandez	bad-sender-name
-RFQ # 170227 - Atlas Copco Spare Parts - Jerwia	bad-subject
-185.29.10.121	bad-ip
-Urgent: Email reactivation	bad-subject
-Computer Maintenance <compmaint@lbl.gov>	bad-sender
-Computer Maintenance	bad-name
-compmaint@lbl.gov	bad-email
+FY17 Performance Review Problem	bad subject 
+Ingrid Peters <ipeters@lbl.gov>	bad sender
+Ingrid Peters	bad sender-full-name
+ipeters	bad-sender
+ipeters@lbl.gov	bad-sender-email
+52.1.96.230	bad-ip
+postmaster@return--path.com	bad mailfrom
